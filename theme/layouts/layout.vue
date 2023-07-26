@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useThemeConfig } from '../composables/config';
+
+const { showSakanaWidget } = useThemeConfig().value
+</script>
+
 <template>
   <div class="antialiased">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
@@ -42,6 +48,7 @@
     </main>
 
     <StarterHelper />
+    <ginro-sakana v-if="showSakanaWidget" />
 
     <StarterFooter>
       <slot name="footer" />
