@@ -62,6 +62,11 @@ export interface ThemeConfig {
    * navbar
    */
   nav: NavItem[]
+
+  /**
+   * widget 
+   */
+	showSakanaWidget: boolean
 }
 
 export interface NavItem {

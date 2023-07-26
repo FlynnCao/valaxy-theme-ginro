@@ -1,12 +1,12 @@
 import { defineConfig } from 'valaxy'
-import type { ThemeConfig } from 'valaxy-theme-starter'
+import type { ThemeConfig } from 'valaxy-theme-ginro'
 
 /**
  * User Config
  * do not use export const config to avoid defu conflict
  */
 export default defineConfig<ThemeConfig>({
-  theme: 'starter',
+  theme: 'ginro',
 
   themeConfig: {
     // colors: {
@@ -35,5 +35,7 @@ export default defineConfig<ThemeConfig>({
     footer: {
       since: 2016,
     },
+
+    showSakanaWidget: true,
   },
 })
